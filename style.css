@@ -120,7 +120,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0px 24px 0px;
+    padding: 16px 0px 16px 0px;
     gap: 4px;
     position: sticky;
     top: 0;
@@ -212,11 +212,14 @@ body {
     }
   }
   
+  .friendwheelcontainer {
+    margin-top: 40px;
+  }
   
   #friendwheel {
-    max-width:400px;
-    -webkit-animation: rotation 5s infinite linear;
-    animation: rotation 5s infinite linear;
+    max-width: 400px;
+    -webkit-animation: rotation 6s infinite linear;
+    animation: rotation 6s infinite linear;
   }
   
   @keyframes rotation {
@@ -231,7 +234,7 @@ body {
   .container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
   }
   
   .container img {
@@ -243,6 +246,7 @@ body {
   }
   
   .sectiontitle {
+    margin-top:8px;
     gap: 8px;
   }
   .line {
@@ -302,7 +306,7 @@ body {
   }
   
   #toobig {
-    max-width: 50%;
+    max-width: 60%;
   }
   
   #tootall{
@@ -357,6 +361,7 @@ body {
     /*width:100%;*/
     display: flex;
     justify-content: center;
+    margin-bottom:8px;
     /*max-width: 600px;*/
   }
 
@@ -729,7 +734,7 @@ body {
     }
   
   .container{
-    gap:24px;
+    gap: 24px;
   }
     .projects {
       padding: 24px 0px 80px 0px;
