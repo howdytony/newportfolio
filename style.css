@@ -883,7 +883,7 @@ body {
   }
   
     .projectcontents {
-      width: 100%;
+      /*width: 100%;*/
       display: flex;
       flex-direction: column;
       gap: 40px;
