@@ -45,7 +45,7 @@ body {
     font-size: 18px;
     line-height: 130%;
     max-width: 760px;
-    margin:0px;
+    margin: 0px;
   }
   
   b {
@@ -256,7 +256,7 @@ body {
   .container img {
     width: 90%;
   }
-  
+
   #projectinfo p {
     max-width: 960px;
   }
@@ -492,7 +492,10 @@ body {
     display: flex;
     justify-content: center;
     margin: 40px 0px;
+    border: 1px solid #b2af97;
   }
+
+  
   
   #feelingfriendslink:hover {
     background-color: #65AA46;
@@ -603,6 +606,7 @@ body {
   .footer p {
     text-align: center;
     font-size: 14px;
+    margin-top:16px;
   }
 
   .footer img{
@@ -681,6 +685,13 @@ body {
   .outboundlink img {
     width: 16px;
   }
+
+  @media (max-width: 1424px){
+    .projectpreview{
+      max-width: 440px;
+    }
+  }
+
   @media (max-width: 1200px){
     .indextopnav img{
       max-width:200px;
@@ -703,6 +714,7 @@ body {
   @media (max-width: 1000px) {
     .about {
       flex-direction: column;
+      padding: 0px 80px 40px 80px;
     }
   
     .hero {
@@ -816,6 +828,9 @@ body {
 
     .projects {
       padding: 24px 0px 80px 0px;
+    }
+    .projectpreview {
+      gap: 0px;
     }
   
     .horizontalsection {
