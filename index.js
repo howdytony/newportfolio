@@ -1,3 +1,17 @@
+const letters = document.querySelectorAll('.logo .letter');
+const colors = ['emerald', 'brick', 'robin', 'lavender', 'mustard'];
+
+document.querySelector('.logo').addEventListener('mouseover', () => {
+  letters.forEach((letter) => {
+    const currentColor = colors.find(color => letter.classList.contains(color));
+    const currentIndex = colors.indexOf(currentColor);
+    const nextColor = colors[(currentIndex + 1) % colors.length];
+    letter.classList.remove(currentColor);
+    letter.classList.add(nextColor);
+  });
+});
+
+
 class MyComponent extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `<h1>Hello world</h1>`;
