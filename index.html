@@ -26,53 +26,7 @@
 
 <body>
     <script src="index.js" type="text/javascript"></script>
-
-<div class="indextopnav">
-  <div class="leftside">
-    <a href="index.html"> <!--<img class="logotype" src="logotype.png" --> 
-    <h1 class="name">
-      <span class="letter grass">A</span>
-      <span class="letter clay">n</span>
-      <span class="letter sky">t</span>
-      <span class="letter lilac">h</span>
-      <span class="letter sun">o</span>
-      <span class="letter grass">n</span>
-      <span class="letter clay">y</span>
-      <span class="letter">&nbsp;</span>
-      <span class="letter sky">S</span>
-      <span class="letter lilac">u</span>
-      <span class="letter sun">d</span>
-      <span class="letter grass">o</span>
-      <span class="letter clay">l</span>
-    </h1>
-    </a>
-  </div>
-
-  <div class="rightside">
-    <div class="social">
-    <a href="https://www.linkedin.com/in/anthonysudol">
-      <img class="socialicon" src="linkedin-icon.png" />
-    </a>
-    </div>
-    <div class="social">
-    <a href="https://www.instagram.com/howdytonyboy/">
-      <img class="socialicon" src="ig-icon.png" />
-    </a>
-    </div>
-    <div class="social">
-      <a href="https://github.com/howdytony">
-        <img class="socialicon" src="github-icon.png" />
-      </a>
-      </div>
-    <div class="link">
-      <a
-        href="https://drive.google.com/file/d/1Mn2t1Nonu4QcXO7TbumgZ-SA-rv-rZ21/view?usp=sharing"
-      >
-        Download Resume</a
-      >
-    </div>
-  </div>
-</div>
+    <div id="header-placeholder"></div>
 
 <div class="hero">
   <img class="logo" src="logolarge.png" />
@@ -209,24 +163,29 @@
 
 </div>
 
-<div class="footer">
-  <div class="container"> <div class="image"><img src="footersquiggle.png"/> </div></div>
-  <div class="projectnav">
-    <!--<a href="index.html"><img src="back-arrow.png" /></a>-->
-  <div class="projectlink" id="presentlylink"> <a href="../presently/presently.html">Presently</a></div>
-  <div class="projectlink" id="feelingfriendslink"> <a href="../feelingfriends/feelingfriends.html">Feeling Friends</a></div>
-  <div class="projectlink" id="mamacuddleslink"><a href="../mamacuddles/mamacuddles.html">KRIASH MamaCuddles</a></div>
-  <div class="projectlink" id="bridgelink"><a href="../bridge/bridge.html">Bridge</a></div>
-    <div class="projectlink" id="kindlelink"><a href="../kindle/kindle.html">Kindle</a></div>
-  </div>
-  <div>
-    <p>Designed and built by Anthony Sudol © 2024</p>
-  </div>
-</div>
+<div id="footer-placeholder"></div>
 
+<script>
+ //header and footer call logic
+ fetch('/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+
+ fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+<!-- VERCEL ANALYTICS STUFF-->
 <script>
   window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
 </script>
+
 <script defer src="/_vercel/speed-insights/script.js"></script>
+
 </body>
 </html>
