@@ -70,7 +70,52 @@ body {
   ul li {
     margin-bottom: 4px;
   }
+
+div.leftside a{
+    text-decoration: none;  
+  }
   
+  .name span {
+    display: inline-block;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-family: Hammersmith One;
+  }
+
+  /* Initial Colors */
+.letter.grass { color: #65AA46; }
+.letter.clay { color: #EE673C; }
+.letter.sky { color: #89C5C5; }
+.letter.lilac { color: #8A89BF; }
+.letter.sun { color: #FEB600; }
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Hover Effect */
+.name:hover .letter {
+  animation: bounce 0.5s ease;
+  /* Add color transition logic here */
+}
+
+.name:hover .letter:nth-child(1) { animation-delay: 0s; }
+.name:hover .letter:nth-child(2) { animation-delay: 0.05s; }
+.name:hover .letter:nth-child(3) { animation-delay: 0.1s; }
+.name:hover .letter:nth-child(4) { animation-delay: 0.15s; }
+.name:hover .letter:nth-child(5) { animation-delay: 0.2s; }
+.name:hover .letter:nth-child(6) { animation-delay: 0.25s; }
+.name:hover .letter:nth-child(7) { animation-delay: 0.3s; }
+.name:hover .letter:nth-child(8) { animation-delay: 0.35s; }
+.name:hover .letter:nth-child(9) { animation-delay: 0.4s; }
+.name:hover .letter:nth-child(10) { animation-delay: 0.45s; }
+.name:hover .letter:nth-child(11) { animation-delay: 0.5s; }
+.name:hover .letter:nth-child(12) { animation-delay: 0.55s; }
+.name:hover .letter:nth-child(13) { animation-delay: 0.6s; }
+/* Continue incrementing delay for any additional letters */
+
   .social {
     display:flex; 
     padding: 4px;
