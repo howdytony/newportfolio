@@ -176,7 +176,7 @@ div.leftside a{
    text-decoration: none !important;
   }
   
-  .indextopnav{
+  .header{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -539,7 +539,11 @@ div.leftside a{
   .projectlink:hover a {
     color: #2c2b08;
   }
-
+  .projectlink.active a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #2a7ae2; /* Example color */
+  }
   #jumptotop {
     display: flex;
     justify-content: center;
