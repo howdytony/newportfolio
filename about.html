@@ -16,29 +16,10 @@
         </script>
         <script defer src="/_vercel/insights/script.js"></script>
       </head>
+
     <body>
-    <div class="topnav">
-    <div class="leftside">
-      <a href="index.html"> <img class="logotype" src="logotype.png" /> </a>
-    </div>
-    <div class="mobilelogo"><a href="index.html"> <img src="logo.png"></a></div>
-  
-    <div class="rightside">
-      <a href="https://www.linkedin.com/in/anthonysudol">
-        <img class="socialicon" src="linkedin-icon.png" />
-      </a>
-      <a href="https://www.instagram.com/howdytonyboy/">
-        <img class="socialicon" src="ig-icon.png" />
-      </a>
-      <div class="link">
-        <a
-          href="https://drive.google.com/file/d/1gJWokmgMq4SdoW8-GsHfU6G96YVSYyh6/view?usp=drive_link"
-        >
-          Download Resume</a
-        >
-      </div>
-    </div>
-  </div>
+    <!--header placeholder-->
+    <div id="header-placeholder"></div>
   
   <div class="aboutarrow"><a href="index.html"><img src="back-arrow.png" /></a></div>
   
@@ -47,8 +28,7 @@
   
     <div class="container" style="gap:0px">
       <h3>
-        Welcome to my portfolio! My approach to User Experience is a wholistic one—where branding and storytelling stands shoulder-to-shoulder with business 
-        needs and ease of use. 
+        Hello and welcome to my portfolio! </br>My approach to User Experience is a wholistic one—</br>where design and storytelling stand shoulder-to-shoulder with ease of use and business needs. 
         </h3>
        <p>
         I cut my teeth teaching digital media art to middle schoolers in Chicago, honing research and presentation skills that now inform playful, 
@@ -64,20 +44,22 @@
     </div>
   </div>
 
-  <div class="footer">
-    <div class="container"> <div class="image"><img src="footersquiggle.png"/> </div></div>
-    <div class="projectnav">
-      <!--<a href="index.html"><img src="back-arrow.png" /></a>-->
-    <div class="projectlink" id="presentlylink"> <a href="../presently/presently.html">Presently</a></div>
-    <div class="projectlink" id="feelingfriendslink"> <a href="../feelingfriends/feelingfriends.html">Feeling Friends</a></div>
-    <div class="projectlink" id="mamacuddleslink"><a href="../mamacuddles/mamacuddles.html">KRIASH MamaCuddles</a></div>
-    <div class="projectlink" id="bridgelink"><a href="../bridge/bridge.html">Bridge</a></div>
-      <div class="projectlink" id="kindlelink"><a href="../kindle/kindle.html">Kindle</a></div>
-    </div>
-    <div>
-      <p>Designed and built by Anthony Sudol © 2024</p>
-    </div>
-  </div>
-  
+  <!--footer placeholder-->
+  <div id="footer-placeholder"></div>
+
+<script>
+ //header and footer call logic
+ fetch('/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+
+ fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
     </body>
 </html>
