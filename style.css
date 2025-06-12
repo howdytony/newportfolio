@@ -346,11 +346,7 @@ div.leftside a {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  max-width: 66%;
-}
-
-.container img {
-  width: 90%;
+  max-width: 100%;
 }
 
 #projectinfo p {
@@ -411,6 +407,7 @@ div.leftside a {
   display: flex;
   align-items: flex-start; /* top-aligns block content */
   gap: 112px;
+  max-width: 100%;
 }
 .two-column .main-block {
   display: flex;
