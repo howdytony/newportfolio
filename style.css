@@ -346,6 +346,7 @@ div.leftside a {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  max-width: 66%;
 }
 
 .container img {
@@ -451,13 +452,8 @@ div.leftside a {
 
 #full-page {
   width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  max-width: none;
-  height: auto;
+  max-width: 100%;
+  margin-left: calc(-1 * (100vw - 100%) / 2);
   display: block;
 }
 
@@ -876,7 +872,17 @@ div.leftside a {
     flex-direction: column;
     gap: 16px;
   }
+
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column .main-block,
+  .two-column .side-block {
+    flex: none;
+    width: 100%;
+  }
 }
+
 /*@media (max-width: 800px) {
       .topnav {
       padding: 24px 0px 40px 0px;
