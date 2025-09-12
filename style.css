@@ -738,13 +738,13 @@ div.leftside a {
 }
 
 .footer {
+  margin-top: 80px; /* breathing room */
   display: flex;
   flex-direction: column;
-  gap: 16px;
   align-items: center;
+  gap: 24px;
   justify-content: center;
   padding: 42px;
-  margin-top: 80px;
   color: #b2af97;
 }
 
@@ -759,6 +759,19 @@ div.leftside a {
   -o-transform: scale(-1, -1);
   -webkit-transform: scale(-1, -1);
   transform: scale(-1, -1);
+}
+
+.squiggle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.squiggle img {
+  width: 100%;
+  /* max-width: 640px; /* optional constraint */
+  height: auto;
+  display: block;
 }
 
 .about {
