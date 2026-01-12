@@ -396,6 +396,7 @@ div.leftside a {
   flex-wrap: wrap;
   gap: 56px;
   width: 100%;
+  padding-bottom: 24px;
 }
 
 .horizontalsection-fixed {
@@ -516,7 +517,7 @@ div.leftside a {
 }
 
 .image {
-  /*width:100%;*/
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 16px;
