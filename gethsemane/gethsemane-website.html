@@ -89,7 +89,7 @@
       </div>
 
       <!-- Part 1: Understanding the Problem -->
-      <div class="container">
+      <div class="section">
         <div class="sectiontitle">
           <h2>1. Understanding the Problem</h2>
           <div class="line"></div>
@@ -117,56 +117,49 @@
           In short: Gethsemane’s website didn’t reflect its community warmth or make it easy to buy gift certificates (a core, stable
           offering). We needed to fix that—fast.
         </p>
-        <p>
-          <em
-            >Visual Placeholder: Original homepage screenshot with callouts for slow load time, illegible text, confusing labels, and
-            inactive search bar area</em
-          >
-        </p>
       </div>
 
       <!-- Part 2: Research & Insights -->
-      <div class="container">
-        <div class="sectiontitle">
-          <h2>2. Research &amp; Insights</h2>
-          <div class="line"></div>
+      <div class="section">
+        <div class="container">
+          <div class="sectiontitle">
+            <h2>2. Research &amp; Insights</h2>
+            <div class="line"></div>
+          </div>
+          <p>
+            Before sketching anything, I dove into research to avoid guesswork. Since no analytics existed, I set up basic visitor and
+            search tracking and ran a full heuristic evaluation. Then I conducted:
+          </p>
+          <ul>
+            <li>
+              <strong>User Interviews &amp; Testing</strong> (10 participants, avg. age 35; skews female 50+). We observed frustration with
+              reading huge blocks of text and unclear navigation.
+            </li>
+            <li>
+              <strong>Card Sorting</strong> to uncover how people think about plant categories. Our findings led to a new hierarchy: people
+              expect “Herbs &amp; Veg” rather than “Edibles,” “Houseplants” rather than “Greenhouse.” and "Home Decor" over "GC Home".
+            </li>
+            <li>
+              <strong>Competitive &amp; Heuristic Analysis</strong> of five local/national garden retailers. They all featured clear product
+              pages, FAQs that mapped to top customer questions, consistent visual branding—and a search bar that actually worked.
+            </li>
+          </ul>
+          <p><strong>Key Insights:</strong></p>
+          <ul>
+            <li>People want to see “What you carry” before “How to care for it.”</li>
+            <li>Labeling must match everyday language (e.g., “Home Décor” instead of “GC Home”).</li>
+            <li>Mobile experience was non-existent—users bounced when they saw walls of text that didn’t fit their screens.</li>
+            <li>Users would abandon navigation if search were reliable, so we needed to fix search first.</li>
+            <li>
+              Since e-commerce potential is limited, we needed to spotlight workshop and gift certificate purchases (a stable revenue
+              stream) up front.
+            </li>
+          </ul>
         </div>
-        <p>
-          Before sketching anything, I dove into research to avoid guesswork. Since no analytics existed, I set up basic visitor and search
-          tracking and ran a full heuristic evaluation. Then I conducted:
-        </p>
-        <ul>
-          <li>
-            <strong>User Interviews &amp; Testing</strong> (10 participants, avg. age 35; skews female 50+). We observed frustration with
-            reading huge blocks of text and unclear navigation.
-          </li>
-          <li>
-            <strong>Card Sorting</strong> to uncover how people think about plant categories. Our findings led to a new hierarchy: people
-            expect “Herbs &amp; Veg” rather than “Edibles,” “Houseplants” rather than “Greenhouse.” and "Home Decor" over "GC Home".
-          </li>
-          <li>
-            <strong>Competitive &amp; Heuristic Analysis</strong> of five local/national garden retailers. They all featured clear product
-            pages, FAQs that mapped to top customer questions, consistent visual branding—and a search bar that actually worked.
-          </li>
-        </ul>
-        <p>
-          <em>Visual Placeholder: Excerpt from card-sort results and competitive analysis matrix</em>
-        </p>
-        <p><strong>Key Insights:</strong></p>
-        <ul>
-          <li>People want to see “What you carry” before “How to care for it.”</li>
-          <li>Labeling must match everyday language (e.g., “Home Décor” instead of “GC Home”).</li>
-          <li>Mobile experience was non-existent—users bounced when they saw walls of text that didn’t fit their screens.</li>
-          <li>Users would abandon navigation if search were reliable, so we needed to fix search first.</li>
-          <li>
-            Since e-commerce potential is limited, we needed to spotlight workshop and gift certificate purchases (a stable revenue stream)
-            up front.
-          </li>
-        </ul>
       </div>
 
       <!-- Part 3: Strategy & Design -->
-      <div class="container">
+      <div class="section">
         <div class="sectiontitle">
           <h2>3. Strategy &amp; Design</h2>
           <div class="line"></div>
@@ -198,8 +191,8 @@
           </ul>
         </div>
 
-        <div class="two-column" style="gap: 0px; margin-left: calc(-1 * (100vw - 100%) / 2)">
-          <img src="./page-analysis-before.png" style="max-width: 100%" />
+        <div id="full-page" class="two-column" style="gap: 0px">
+          <img src="./page-analysis-before.png" />
           <img src="./page-analysis-after.png" />
         </div>
 
@@ -293,14 +286,11 @@
               builders.
             </li>
           </ul>
-          <p>
-            <em>Visual Placeholder: Mobile wireframe vs. final mobile screenshot</em>
-          </p>
         </div>
       </div>
 
       <!-- Part 4: Implementation & Results -->
-      <div class="container">
+      <div class="section">
         <div class="sectiontitle">
           <h2>4. Implementation &amp; Results</h2>
           <div class="line"></div>
@@ -320,9 +310,6 @@
             - Addressed plugin conflicts: disabled two heavy gallery plugins, replaced them with lightweight JavaScript carousels.<br />
             - Launched in mid-October; monitored performance logs and error reports daily for the first two weeks.
           </p>
-          <p>
-            <em>Visual Placeholder: Screenshot of staging dashboard / deployment log</em>
-          </p>
         </div>
 
         <div class="container">
@@ -339,15 +326,6 @@
             - <strong>Search Usage:</strong> 20% of users bypassed navigation entirely and found relevant pages via search within five
             seconds.
           </p>
-          <p>
-            <em
-              >Visual Placeholder: Line graph of monthly web traffic, bar chart of gift certificate sales increase, and pie chart of search
-              usage vs. nav usage</em
-            >
-          </p>
-          <p>
-            <em>Visual Placeholder: Before/After Lighthouse score screenshots</em>
-          </p>
         </div>
 
         <div class="container">
@@ -361,7 +339,7 @@
       </div>
 
       <!-- Part 5: Learnings & Next Steps -->
-      <div class="container">
+      <div class="section">
         <div class="sectiontitle">
           <h2>5. Learnings &amp; Next Steps</h2>
           <div class="line"></div>
