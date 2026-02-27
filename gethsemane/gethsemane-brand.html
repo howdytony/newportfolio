@@ -1,7 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Anthony Sudol - Gethsemane Gardens Brand Refresh</title>
+    <title>Anthony Sudol - Gethsemane Garden Center Brand & Marketing Refresh</title>
     <meta name="author" content="Anthony Sudol" />
     <meta
       name="description"
@@ -34,13 +34,10 @@
     <div class="projectcontents">
       <div class="projectoverview">
         <div class="container">
-          <h2>
-            COMING SOON Total brand makeover of an iconic Chicago garden
-            retailer.
-          </h2>
+          <h2>COMING SOON Total brand makeover of an iconic Chicago garden retailer.</h2>
           <div class="container">
             <div class="outboundlink">
-              <a href=""> Explore brand guidelines (coming soon) </a>
+              <a href="./gethsemane-brand-guidlines.pdf"> Explore brand guidelines </a>
               <img src="../link-arrow.png" />
             </div>
           </div>
@@ -52,19 +49,7 @@
     <!--footer placeholder-->
     <div id="footer-placeholder"></div>
 
-    <script>
-      //header and footer call logic
-      fetch("/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
-
-      fetch("/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    </script>
+    <!-- LOADS HEADER AND FOOTER-->
+    <script src="/shared.js" defer></script>
   </body>
 </html>
