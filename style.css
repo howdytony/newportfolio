@@ -280,7 +280,7 @@ ul li {
      FOOTER
      ============================================ */
 .footer {
-  /*margin-top: 80px;*/
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -575,7 +575,7 @@ ul li {
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
-  padding: 80px 0px 32px 0px;
+  padding: 80px 0px 40px 0px;
   text-align: center;
 }
 
@@ -1062,8 +1062,7 @@ ul li {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  min-height: 100vh; /* Full viewport height */
-  padding: 10vh 10vw; /* Scales with screen size */
+  padding: 20vh 10vw 5vh 10vw; /* Scales with screen size */
   max-width: 1400px; /* Prevents getting too wide */
   margin: 0 auto; /* Centers the container */
 }
@@ -1284,7 +1283,7 @@ ul li {
   }
 
   .tagline {
-    padding-top: 32px;
+    padding-top: 40px;
   }
 
   #toobig {
@@ -1300,7 +1299,7 @@ ul li {
   }
 
   .projects {
-    padding: 24px 0px 80px 0px;
+    padding: 0px 0px 80px 0px;
   }
 
   .projectpreview {
