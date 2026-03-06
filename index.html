@@ -29,16 +29,58 @@
   <body>
     <div id="header-placeholder"></div>
 
-    <div class="hero">
-      <img class="logo" src="logolarge.png" />
-      <div class="herosection">
-        <h1>
-          Hi there! I'm Anthony, <br />
-          a <b>User Experience Designer</b> and <b>Illustrator</b> with an enthusiasm for research, an eye for visual design, and an
-          excitement for building products that people love to use.
-        </h1>
-        <div class="link"><a href="about.html"> Read more > </a></div>
+    <!-- HERO CAROUSEL -->
+    <div class="hero-carousel">
+      <div class="carousel-container">
+        <!-- Slide 1 -->
+        <div class="carousel-slide active">
+          <img data-src="hero1.jpg" alt="Hero image 1" class="carousel-image lazy" />
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+          <img data-src="hero2.jpg" alt="Hero image 2" class="carousel-image lazy" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+          <img data-src="hero3.jpg" alt="Hero image 3" class="carousel-image lazy" />
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-slide">
+          <img data-src="hero4.jpg" alt="Hero image 4" class="carousel-image lazy" />
+        </div>
+        <!-- Slide 5 -->
+        <div class="carousel-slide">
+          <img data-src="hero5.jpg" alt="Hero image 5" class="carousel-image lazy" />
+        </div>
       </div>
+
+      <!-- Navigation Arrows -->
+      <button class="carousel-arrow carousel-arrow-left" aria-label="Previous slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button class="carousel-arrow carousel-arrow-right" aria-label="Next slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Dot Indicators -->
+      <div class="carousel-dots">
+        <button class="carousel-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+        <button class="carousel-dot" data-slide="1" aria-label="Go to slide 2"></button>
+        <button class="carousel-dot" data-slide="2" aria-label="Go to slide 3"></button>
+        <button class="carousel-dot" data-slide="3" aria-label="Go to slide 4"></button>
+        <button class="carousel-dot" data-slide="4" aria-label="Go to slide 5"></button>
+      </div>
+    </div>
+
+    <div class="tagline">
+      <h2>
+        Digital & print design for <i class="underline-sun">websites</i>, <i class="underline-sun">social</i>, and
+        <i class="underline-sun">everywhere in between</i>
+      </h2>
     </div>
 
     <div class="projects">
@@ -68,7 +110,7 @@
             <a href="presently/presently.html"><h2>Presently</h2></a>
           </div>
           <p>
-            App featuring birthday countdown reminders and personalized, AI-powered gift suggestions based on your friend’s interests,
+            App featuring birthday countdown reminders and personalized, AI-powered gift suggestions based on your friend's interests,
             hobbies, and vibe.
           </p>
           <div class="tags"><p>ux design | deployed app</p></div>
@@ -114,7 +156,7 @@
           <div class="projecttitle">
             <a href="kindle/kindle.html"><h2>Kindle Book Club Feature</h2></a>
           </div>
-          <p>Solution to encourage engagement and enthusiasm in discussing books with others using Kindle’s range of e-Ink devices.</p>
+          <p>Solution to encourage engagement and enthusiasm in discussing books with others using Kindle's range of e-Ink devices.</p>
           <div class="tags"><p>ux design | proposal</p></div>
         </div>
       </div>
@@ -131,51 +173,15 @@
           <div class="tags"><p>ux design | deployed app</p></div>
         </div>
       </div>
-
-      <!-- <div class="projectpreview">
-    <div class="image">
-      <a href="illustration/illustration.html"><img src="illustrationpreview.png" /></a>
-    </div>
-    <div class="projecttitle">
-      <h2>Illustration</h2>
-      <div class="tags"><p>ux design | proposal</p></div>
-    </div>
-    <p>
-      Image-based tomfoolery for projects in fashion, food, music, and the arts. Clients include: Tomorrow Creates, Everpress, Mellow Mushroom, Oakwood Arts, Helmets Against Hate, Shy Lennox, and Not Cameron
-    </p>
-  </div> -->
-
-      <!-- <div class="projectpreview">
-    <div class="image">
-      <a href="gethsemane/gethsemane.html"><img src="gethsemane-brand-preview.png" /></a>
-    </div>
-    <div class="projecttitle">
-      <a href="gethsemane/gethsemane.html"><h2>Gethsemane Garden Center Website</h2></a>
-      <div class="tags"><p>ux design | website overhaul | wordpress</p></div>
-    </div>
-    <p>
-      Complete website facelift for one of Chicago's oldest and most beloved garden centers. 
-    </p>
-  </div> -->
-
-      <!-- <div class="projectpreview">
-    <div class="image">
-      <a href="gethsemane/gethsemane.html"><img src="gethsemane-events-preview.png" /></a>
-    </div>
-    <div class="projecttitle">
-      <a href="gethsemane/gethsemane.html"><h2>Gethsemane Garden Center Website</h2></a>
-      <div class="tags"><p>ux design | website overhaul | wordpress</p></div>
-    </div>
-    <p>
-      Complete website facelift for one of Chicago's oldest and most loved garden centers. 
-    </p>
-  </div> -->
     </div>
 
     <div id="footer-placeholder"></div>
 
     <!-- LOADS HEADER & FOOTER -->
     <script src="/shared.js" defer></script>
+
+    <!-- CAROUSEL SCRIPT -->
+    <script src="/carousel.js" defer></script>
 
     <!-- VERCEL ANALYTICS STUFF-->
     <script>
