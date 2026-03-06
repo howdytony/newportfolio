@@ -280,7 +280,7 @@ ul li {
      FOOTER
      ============================================ */
 .footer {
-  margin-top: 80px;
+  /*margin-top: 80px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1181,7 +1181,7 @@ ul li {
   body {
     font-size: 16px;
     padding: 0px 16px;
-    padding-top: 80px; /* Account for fixed header */
+    padding-top: 44px; /* Account for fixed header */
   }
 
   p {
@@ -1229,13 +1229,14 @@ ul li {
     justify-content: space-between;
   }
 
-  .leftside {
-    display: none;
-  }
-
   .rightside {
     flex-direction: row-reverse;
     gap: 4px;
+    padding-top: 2px;
+  }
+
+  .leftside img {
+    width: 24px !important;
   }
 
   .hero {
@@ -1249,6 +1250,11 @@ ul li {
   }
 
   /* Carousel mobile styles */
+
+  /* Reduce carousel height on mobile */
+  .hero-carousel {
+    height: 60vh; /* Reduced from 100vh */
+  }
   .carousel-arrow {
     width: 40px;
     height: 40px;
@@ -1275,6 +1281,10 @@ ul li {
   .carousel-dot {
     width: 10px;
     height: 10px;
+  }
+
+  .tagline {
+    padding-top: 32px;
   }
 
   #toobig {
@@ -1385,7 +1395,7 @@ ul li {
 @media (max-width: 360px) {
   body {
     padding: 0px 8px;
-    padding-top: 80px;
+    /*padding-top: 80px;*/
   }
 }
 
