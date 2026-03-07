@@ -387,7 +387,7 @@ ul li {
 .hero-carousel {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
 }
@@ -575,7 +575,7 @@ ul li {
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
-  padding: 80px 0px 40px 0px;
+  padding: 64px 0px 32px 0px;
   text-align: center;
 }
 
