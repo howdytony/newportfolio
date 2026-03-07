@@ -725,9 +725,10 @@ ul li {
 }
 
 .imagerow img {
+  height: 200px; /* Forces all images to same height */
+  width: auto; /* Width adjusts to maintain aspect ratio */
   max-width: 320px;
-  width: 100%;
-  height: auto;
+  flex-shrink: 1;
 }
 
 .imagecolumn {
@@ -878,7 +879,7 @@ ul li {
   flex-direction: row;
   color: var(--color-olive);
   gap: 16px;
-  padding-right: 8px;
+  padding: 2px 8px 0px 0px;
   font-style: italic;
 }
 
