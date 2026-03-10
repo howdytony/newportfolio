@@ -160,7 +160,7 @@ ul li {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 0px 8px 0px;
+  padding: 0px 0px 2px 0px;
   gap: 2px;
   position: fixed;
   top: 0;
@@ -179,6 +179,10 @@ ul li {
   justify-content: center;
 }
 
+.leftside h3 {
+  color: #2c2b08;
+}
+
 .leftside a {
   text-decoration: none;
 }
@@ -186,17 +190,15 @@ ul li {
 .leftside img {
   max-width: 312px;
   width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.leftside:hover img {
+  animation: rotation 2s linear; /* One spin on hover */
 }
 
 .logotype:hover {
   opacity: 0.75;
-}
-
-/* Mobile logo - hidden by default, shown on mobile */
-.mobilelogo {
-  display: none;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .rightside {
@@ -229,51 +231,6 @@ ul li {
 }
 .letter.sun {
   color: var(--color-sun);
-}
-
-.name:hover .letter {
-  animation: bounce 0.5s ease;
-}
-
-/* Staggered animation delays for each letter */
-.name:hover .letter:nth-child(1) {
-  animation-delay: 0s;
-}
-.name:hover .letter:nth-child(2) {
-  animation-delay: 0.05s;
-}
-.name:hover .letter:nth-child(3) {
-  animation-delay: 0.1s;
-}
-.name:hover .letter:nth-child(4) {
-  animation-delay: 0.15s;
-}
-.name:hover .letter:nth-child(5) {
-  animation-delay: 0.2s;
-}
-.name:hover .letter:nth-child(6) {
-  animation-delay: 0.25s;
-}
-.name:hover .letter:nth-child(7) {
-  animation-delay: 0.3s;
-}
-.name:hover .letter:nth-child(8) {
-  animation-delay: 0.35s;
-}
-.name:hover .letter:nth-child(9) {
-  animation-delay: 0.4s;
-}
-.name:hover .letter:nth-child(10) {
-  animation-delay: 0.45s;
-}
-.name:hover .letter:nth-child(11) {
-  animation-delay: 0.5s;
-}
-.name:hover .letter:nth-child(12) {
-  animation-delay: 0.55s;
-}
-.name:hover .letter:nth-child(13) {
-  animation-delay: 0.6s;
 }
 
 /* ============================================
@@ -387,7 +344,8 @@ ul li {
 .hero-carousel {
   position: relative;
   width: 100vw;
-  height: 85vh;
+  height: 90vh;
+  padding-top: 16px;
   margin-left: calc(-50vw + 50%);
   overflow: hidden;
 }
@@ -575,7 +533,7 @@ ul li {
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
-  padding: 64px 0px 32px 0px;
+  padding: 40px 0px 32px 0px;
   text-align: center;
 }
 
@@ -843,13 +801,13 @@ ul li {
 .projectpreview img {
   padding-bottom: 4px;
   width: 100%;
+  transition: transform 0.08s ease; /* Smooth return to rest */
 }
 
 .projectpreview img:hover {
-  animation: bounce ease-in-out 0.5s;
-  animation-timing-function: ease-in-out;
+  animation: bounce 0.4s;
+  animation-fill-mode: none; /* Stays in final position */
 }
-
 .project-specs {
   display: flex;
   flex-direction: column;
@@ -936,92 +894,6 @@ ul li {
   border: 1px solid var(--color-olive);
 }
 
-#feelingfriendslink:hover {
-  background-color: var(--color-grass);
-  color: var(--color-dark);
-  font-weight: 700;
-  border: none;
-}
-
-#presentlylink:hover {
-  background-color: var(--color-clay);
-  color: var(--color-dark);
-  font-weight: 700;
-  border: none;
-}
-
-#bridgelink:hover {
-  background-color: var(--color-bridge);
-  color: var(--color-dark);
-  font-weight: 700;
-  border: none;
-}
-
-#mamacuddleslink:hover {
-  background-color: var(--color-mama);
-  color: var(--color-dark);
-  font-weight: 700;
-  border: none;
-}
-
-#kindlelink:hover {
-  background-color: var(--color-kindle);
-  color: var(--color-dark);
-  font-weight: 700;
-  border: none;
-}
-
-.feelingfriendsselected {
-  background-color: var(--color-grass);
-  color: var(--color-dark);
-  font-weight: 700;
-  border: none;
-}
-
-.feelingfriendsselected a {
-  color: var(--color-dark);
-}
-
-.presentlyselected {
-  background-color: var(--color-clay);
-  font-weight: 700;
-  border: none;
-}
-
-.presentlyselected a {
-  color: var(--color-dark);
-}
-
-.mamacuddlesselected {
-  background-color: var(--color-mama);
-  font-weight: 700;
-  border: none;
-}
-
-.mamacuddlesselected a {
-  color: var(--color-dark);
-}
-
-.bridgeselected {
-  background-color: var(--color-bridge);
-  font-weight: 700;
-  border: none;
-}
-
-.bridgeselected a {
-  color: var(--color-dark);
-}
-
-.kindleselected {
-  background-color: var(--color-kindle);
-  font-weight: 700;
-  border: none;
-}
-
-.kindleselected a {
-  color: var(--color-dark);
-}
-
 /* ============================================
      PROJECT DETAIL PAGES
      ============================================ */
@@ -1074,6 +946,41 @@ ul li {
   flex-shrink: 0; /* Prevents image from shrinking too much */
 }
 
+/* Highlight animation for about page */
+.highlight {
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: linear-gradient(transparent 40%, var(--color-sun) 70%);
+}
+
+.highlight-1 {
+  animation: highlightStay 9s ease-in-out;
+  animation-fill-mode: forwards; /* Keeps final state */
+}
+
+.highlight-2 {
+  animation: highlightStay 9s ease-in-out;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.highlight-3 {
+  animation: highlightStay 9s ease-in-out;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes highlightStay {
+  0% {
+    background-size: 0% 100%;
+  }
+  11.11%,
+  100% {
+    background-size: 100% 100%; /* Stays visible forever */
+  }
+}
+
 /* ============================================
      ANIMATIONS
      ============================================ */
@@ -1105,12 +1012,20 @@ ul li {
 }
 
 @keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  10% {
+    transform: translateY(2px) scale(0.975);
   }
   50% {
-    transform: translateY(-6px);
+    transform: translateY(-8px) scale(1);
+  }
+  90% {
+    transform: translateY(2px) scale(1);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
   }
 }
 
@@ -1213,14 +1128,6 @@ ul li {
     font-size: 14px;
   }
 
-  .mobilelogo {
-    display: flex;
-  }
-
-  .mobilelogo img {
-    width: 44px;
-  }
-
   .header {
     padding: 8px 16px !important;
     gap: 4px;
@@ -1237,6 +1144,7 @@ ul li {
 
   .leftside img {
     width: 24px !important;
+    animation: rotation 6s infinite linear; /* Continuous spin */
   }
 
   .hero {
