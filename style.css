@@ -1272,7 +1272,6 @@ ul li {
 
   .projectoverview {
     flex-direction: column;
-    padding-top: 24px;
     gap: 32px;
   }
 
@@ -1284,7 +1283,7 @@ ul li {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0px 8px 0px 8px;
+    padding: 40px 8px 0px 8px;
   }
 
   .caption p {
