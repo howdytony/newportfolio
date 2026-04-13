@@ -551,33 +551,6 @@ ul li {
 }
 
 /* ============================================
-     LEGACY HERO SECTION (for other pages)
-     ============================================ */
-.hero {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 160px 120px;
-  gap: 80px;
-}
-
-.herosection {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.hero img {
-  width: 70%;
-  max-width: 320px;
-}
-
-.logo {
-  animation: mover 2s infinite alternate;
-}
-
-/* ============================================
      LAYOUT CONTAINERS
      ============================================ */
 .section {
