@@ -27,3 +27,4 @@ Personal portfolio for a UX designer/illustrator. Static site: vanilla HTML, CSS
 
 - Match existing formatting (Prettier-style, ~140 col)
 - Keep existing class naming; don't invent a new convention
+- Shared root assets and fragments (/style.css, /logo.png, /link-arrow.png, /header.html) use root-absolute paths. A page’s own images use plain relative paths. Never use ../ to reach a root file.
